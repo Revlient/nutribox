@@ -235,15 +235,10 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--text-color);
-  /* background-color: red; */
-  background: rgba(255, 255, 255, 0.39);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(40.3px);
-  -webkit-backdrop-filter: blur(13.3px);
+  color: var(--default-color);
+  background-color: var(--background-color);
   padding: 20px 0;
-  position: fixed;
-  width: 100%;
+  transition: all 0.5s;
   z-index: 997;
 }
 
@@ -828,8 +823,8 @@ section,
 .hero h1 {
   color: #fff;
   margin: 0;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 900;
 }
 
 .hero h1 span {
@@ -842,7 +837,7 @@ section,
   /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
   margin: 5px 0 30px 0;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hero .btn-get-started {
@@ -920,7 +915,12 @@ section,
     transform: translateY(-5px);
   }
 }
-
+@media (max-width: 1000px) {
+  .hero-img{
+    height: 80%;
+    margin-bottom: 5px;
+  }
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1156,10 +1156,11 @@ section,
 
 .menu .nav-link h4 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   font-family: var(--default-font);
 }
+
 
 @media (max-width: 575px) {
   .menu .nav-link h4 {
@@ -1227,7 +1228,7 @@ section,
 
 .menu .tab-content .menu-item h4 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 5px;
   font-family: var(--default-font);
 }
@@ -1239,8 +1240,8 @@ section,
 }
 
 .menu .tab-content .menu-item .price {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   color: var(--accent-color);
 }
 
