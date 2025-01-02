@@ -1184,6 +1184,9 @@ section,
   border-radius: 50px;
   transition: 0.3s;
 }
+.general text-secondary{
+  font-weight: bold;
+}
 
 .menu-item .btn-getstarted:hover,
 .menu-item .btn-getstarted:focus:hover {
