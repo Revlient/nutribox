@@ -1184,9 +1184,8 @@ section,
   border-radius: 50px;
   transition: 0.3s;
 }
-.text-secondary{
-  font-weight: 900;
-}
+
+
 
 .menu-item .btn-getstarted:hover,
 .menu-item .btn-getstarted:focus:hover {
@@ -1237,6 +1236,9 @@ section,
   font-size: 18px;
   font-weight: 500;
   color: var(--accent-color);
+}
+.general-text-secondary{
+  font-weight: 900;
 }
 
 /*--------------------------------------------------------------
