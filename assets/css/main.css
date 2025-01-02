@@ -1185,7 +1185,7 @@ section,
   transition: 0.3s;
 }
 .text-secondary{
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .menu-item .btn-getstarted:hover,
