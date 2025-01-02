@@ -487,7 +487,7 @@
 
         </div>
 
-        <form action=""  method="post" class="php-email-form" id="contactForm" data-aos="fade-up" data-aos-delay="600">
+        <form action="forms/contact.php" method="post" class="php-email-form" id="contactForm" data-aos="fade-up" data-aos-delay="600">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -578,26 +578,8 @@
     </div>
 
   </footer>
-    <script>
-      document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission
+  
 
-      // Get form values
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      // Format the message
-      const whatsappMessage = `Hello, I am ${name}. My email is ${email}. Here's my message: ${message}`;
-
-      // Encode the message for URL
-      const encodedMessage = encodeURIComponent(whatsappMessage);
-
-      // Redirect to WhatsApp with the message
-      const whatsappURL = `https://wa.me/918109557856?text=${encodedMessage}`;
-        window.location.href = whatsappURL;
-    });
-  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
